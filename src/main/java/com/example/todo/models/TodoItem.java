@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.util.UUID;
 import java.util.Date;
 
@@ -26,7 +25,6 @@ public class TodoItem {
     private UUID listId;
 
     @Column(name="taskName")
-    @NotEmpty(message="* Enter Task Name")
     private String taskName;
 
     @Column(name="isDone")
